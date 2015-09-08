@@ -1,0 +1,22 @@
+#highlight{
+    background-color: yellow;
+}
+
+div.gridsquare{
+    /* these styles will let the divs line up next to each other
+       while accepting dimensions */
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: black;
+    background-color: black;
+    /* a small margin to separate the blocks */
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+
+div.row{
+	clear: both;
+}
+
