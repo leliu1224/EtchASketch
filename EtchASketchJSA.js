@@ -4,13 +4,18 @@ $(document).ready(function(){
       $(this).attr('id', 'highlight');
   });
 
-  $("body").on("mouseenter", "div.gridsquare", function(){
-    $(this).attr('id', 'highlight');
+  $("body").on("mouseleave", "div.gridsquare", function(){
+    $(this).attr('id', 'fadeout');
   });
 
 });
 
 
+function gridSize(){
+  var size = prompt("How big?: ")
+  $("div.row").remove();
+  genDivs(size);
+}
 function genDivs(v){ 
   var e = document.body; // whatever you want to append the rows to: 
   for(var i = 0; i < v; i++){ 
